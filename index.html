@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <header class="navbar">
     <div class="container">
@@ -16,7 +18,7 @@
             <img src="img/logo.svg" alt="Logo: ehya">
           </a>
         </div>
-        <div class="navbar-top__menu-left">
+        <div class="navbar-top__menu-right">
           <ul class="navbar-top__menu">
             <li><a href="#" class="navbar-top__menu-link">Главная</a></li>
             <li><a href="#" class="navbar-top__menu-link">Новинки</a></li>
@@ -26,9 +28,63 @@
           </ul>
           <button class="button navbar-top__button">Войти</button>
         </div>
+        <button class="navbar-top__menu-button">
+          <img src="img/icons/menu-icon.svg" alt="Icon: menu">
+        </button>
+      </div>
+      <!-- ./navbar-top -->
+    </div>
+    <!-- ./container -->
+
+    <div class="navbar-bottom">
+      <div class="navbar-bottom__menu-right">
+        <ul class="navbar-bottom__menu">
+          <li><a href="#" class="navbar-bottom__menu-link">Главная</a></li>
+          <li><a href="#" class="navbar-bottom__menu-link">Новинки</a></li>
+          <li><a href="#" class="navbar-bottom__menu-link">Тренды</a></li>
+          <li><a href="#" class="navbar-bottom__menu-link">Отзывы</a></li>
+          <li><a href="#" class="navbar-bottom__menu-link">Контакты</a></li>
+        </ul>
+        <button class="button navbar-bottom__button">Войти</button>
       </div>
     </div>
   </header>
+  <!-- ./navbar -->
+
+  <section class="hero">
+    <div class="hero-background">
+      <img src="img/girl.png" alt="" class="hero-background__image">
+      <div class="hero-background__color"></div>
+    </div>
+    <div class="hero-description">
+      <span class="hero-description__tag">
+        # ready to be cool
+      </span>
+      <h2 class="hero-description__title">Каждый может<br>быть крутым <br>и модным</h2>
+      <p class="hero-description__text">
+        Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой стиль. Всё это вы можете
+        найти здесь. Начните сейчас.
+      </p>
+      <a href="#" class="hero-description__button">Подобрать одежду</a>
+      <div class="hero-description__advantage">
+        <div class="hero-description__advantage-item">
+          <img class="hero-description__advantage-item-icon" src="img/icons/donation_icon.svg" alt="Icon: donation">
+          <span class="advantage-description">Онлайн оплата</span>
+        </div>
+        <div class="hero-description__advantage-item">
+          <img class="hero-description__advantage-item-icon" src="img/icons/path_icon.svg" alt="Icon: path">
+          <span class="advantage-description">Гарантия</span>
+        </div>
+        <div class="hero-description__advantage-item">
+          <img class="hero-description__advantage-item-icon" src="img/icons/like_icon.svg" alt="Icon: like">
+          <span class="advantage-description">Качество</span>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.hero-description -->
+  </section>
+  <!-- ./hero -->
 
 
 
@@ -36,4 +92,5 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
