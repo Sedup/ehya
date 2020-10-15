@@ -8,12 +8,19 @@
     &-background
       right: -230px
 @media (max-width: 950px)
-  .container
-    max-width: 700px
-    margin: auto
-    margin-top: 8px
+  // .container
   .navbar
-    max-height: 64px
+    max-height: 72px
+    padding-left: 60px
+    padding-right: 60px
+    &__mobile
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        background: #FFF
+        z-index: 20
     &-top
       padding: 18px 0
       &__menu
@@ -21,4 +28,65 @@
           display: none
         &-button
           display: flex
-// @media (max-width: 768px)
+          padding: 0
+    &-bottom
+      &__mobile
+        &--visible
+          display: block
+          padding: 36px 24px
+      &__menu
+        padding: 0
+        margin: 0
+        &-right
+          align-items: flex-start
+          position: relative
+        &-item
+          margin-bottom: 20px
+        &-close
+          position: absolute
+          top: 0
+          right: 0
+      &__button
+        margin: 0
+  .hero
+    margin-top: 96px
+    max-width: 95%
+    padding: 41px 0 45px 29px
+    &-description
+      &__title
+        margin-top: 29px
+        margin-bottom: 22px
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        letter-spacing: 0.2px
+      &__text
+        max-width: 430px
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 32px
+        letter-spacing: 0.6px
+@media (max-width: 768px)
+  .hero
+    padding-bottom: 34px
+    &-background
+      width: 1074px
+      height: 1614px
+      right: -347px
+      top: -20px
+    &-description
+      &__text
+        margin-bottom: 50px
+      &__advantage
+        margin-top: 55px
+        &-item
+          margin-right: 25px
+@media (max-width: 570px)
+  .hero
+    max-width: 100%
+    align-items: center
+    padding: 381px 0 36px 0
+    border-radius: 0
+    margin-bottom: 64px

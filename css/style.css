@@ -385,6 +385,10 @@ template {
   display: none;
 }
 
+.navbar {
+  background: #FFF;
+}
+
 .navbar-top, .navbar-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,8 +451,8 @@ template {
 .navbar-bottom {
   display: none;
   position: absolute;
-  top: 3px;
-  right: 5px;
+  top: 0;
+  right: 10px;
   max-width: 304px;
   padding: 12px 16px 36px 24px;
   background-color: inherit;
@@ -592,6 +596,14 @@ template {
   padding: 7.5px;
 }
 
+.hero .advantage-description {
+  font-family: HKGrotesk-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (max-width: 1200px) {
   .navbar-top {
     padding-left: 60px;
@@ -606,13 +618,18 @@ template {
 }
 
 @media (max-width: 950px) {
-  .container {
-    max-width: 700px;
-    margin: auto;
-    margin-top: 8px;
-  }
   .navbar {
-    max-height: 64px;
+    max-height: 72px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .navbar__mobile-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: #FFF;
+    z-index: 20;
   }
   .navbar-top {
     padding: 18px 0;
@@ -624,6 +641,87 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
+  }
+  .navbar-bottom__mobile--visible {
+    display: block;
+    padding: 36px 24px;
+  }
+  .navbar-bottom__menu {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-bottom__menu-right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .navbar-bottom__menu-item {
+    margin-bottom: 20px;
+  }
+  .navbar-bottom__menu-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navbar-bottom__button {
+    margin: 0;
+  }
+  .hero {
+    margin-top: 96px;
+    max-width: 95%;
+    padding: 41px 0 45px 29px;
+  }
+  .hero-description__title {
+    margin-top: 29px;
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+  }
+  .hero-description__text {
+    max-width: 430px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 34px;
+  }
+  .hero-background {
+    width: 1074px;
+    height: 1614px;
+    right: -347px;
+    top: -20px;
+  }
+  .hero-description__text {
+    margin-bottom: 50px;
+  }
+  .hero-description__advantage {
+    margin-top: 55px;
+  }
+  .hero-description__advantage-item {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 570px) {
+  .hero {
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 381px 0 36px 0;
+    border-radius: 0;
+    margin-bottom: 64px;
   }
 }
 /*# sourceMappingURL=style.css.map */
