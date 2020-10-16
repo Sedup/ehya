@@ -697,6 +697,141 @@ template {
   margin-left: 19px;
 }
 
+.trands-container {
+  width: 1136px;
+}
+
+.trands-menu {
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trands-menu__title {
+  margin: 0;
+  font-family: HKGrotesk-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+}
+
+.trands-menu__tabs {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.trands-menu__tabs-item {
+  margin-left: 43px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.trands-cards {
+  margin-left: 5px;
+  display: -ms-grid;
+  display: grid;
+  grid: repeat(2, -webkit-max-content)/repeat(4, -webkit-max-content);
+  grid: repeat(2, max-content)/repeat(4, max-content);
+  gap: 50px 30px;
+}
+
+.trands-cards__item {
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trands-link {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: HKGrotesk-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  background-color: #1565D8;
+  text-decoration: none;
+}
+
+.image-wrapper {
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.description-wrapper {
+  padding: 22px 10px 0 10px;
+}
+
+.description-wrapper__title {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.description-wrapper__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.card-img {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1200px) {
   .navbar-top {
     padding-left: 60px;
