@@ -1,0 +1,56 @@
+.collection
+  margin-bottom: 145px
+  &-container
+    display: flex
+    // justify-content: space-between
+  &-images
+    display: grid
+    grid-template: repeat(2, max-content)/repeat(2, max-content)
+    grid-gap: 30px
+    margin-right: 57px
+    // width: 320px
+    &__item
+      overflow: hidden
+      // grid-column: 2 / 3
+      width: 320px
+      height: 230px
+      border-radius: 8px
+      &-big
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+        height: 490px
+  &-image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &-description
+    margin-top: 10px
+    max-width: 392px
+    &__title
+      margin: 0
+      font-family: HKGrotesk-Bold
+      font-style: normal
+      font-weight: 500
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+    &__text
+      margin-top: 24px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      letter-spacing: 0.6px
+    &__link
+      margin-top: 40px
+      display: flex
+      align-items: center
+      text-decoration: none
+      color: $primary
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      letter-spacing: 0.8px
+      &-right
+        margin-left: 19px

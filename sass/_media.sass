@@ -3,6 +3,19 @@
     &-top
       padding-left: 60px
       padding-right: 60px
+  .collection
+    &-container
+      flex-direction: column
+    &-images
+      margin-right: 0
+      max-width: 670px
+      margin-right: auto
+      margin-left: auto
+    &-description
+      text-align: center
+      max-width: 90%
+      margin-right: auto
+      margin-left: auto
 @media (max-width: 1100px)
   .hero
     &-background
@@ -71,6 +84,7 @@
 @media (max-width: 768px)
   .hero
     padding-bottom: 34px
+    margin-bottom: 80px
     &-background
       width: 1074px
       height: 1614px
@@ -83,6 +97,47 @@
         margin-top: 55px
         &-item
           margin-right: 25px
+  .collection
+    &-container
+      width: 667px
+    &-description
+      text-align: left
+      max-width: 100%
+      margin-top: 40px
+      &__text
+        letter-spacing: 0.5px
+      &__link
+        margin-top: 25px
+@media (max-width: 700px)
+  .collection
+    &-container
+      width: 290px
+      margin-left: auto
+      margin-right: auto
+    &-images
+      grid-gap: 14px
+      &__item
+        width: 138px
+        height: 97px
+        &-big
+          grid-column: 1 / 3
+          grid-row: 1
+          width: 290px
+          height: 300px
+    &-description
+      text-align: center
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
 @media (max-width: 570px)
   .hero
     max-width: 100%
@@ -90,3 +145,60 @@
     padding: 381px 0 36px 0
     border-radius: 0
     margin-bottom: 64px
+    &-description
+      text-align: center
+      &__text
+        margin: 0 auto 50px auto
+      &__advantage
+        justify-content: space-around
+        flex-wrap: wrap
+@media (max-width: 320px)
+  .navbar
+    padding-left: 24px
+    padding-right: 24px
+  .hero
+    margin-top: 89px
+    &-background
+      top: -4px
+      &__color
+        background: linear-gradient(180deg, rgba(238,238,238,0.0001) 0.32%, #E8EAE9 65.51%)
+    &-description
+      &__title
+        margin-top: 24px
+        margin-bottom: 19px
+        font-style: normal
+        font-weight: bold
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 0.2px
+      &__text
+        padding: 0 20px 0 20px
+        margin-bottom: 36px
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+      &__button
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        padding: 16px 48px
+      &__advantage
+        margin: 20px auto 0 auto
+        max-width: 273px
+        &-item
+          margin-right: 0
+          margin-top: 15px
+          &-icon
+            margin-right: 8px
+            border-radius: 8px
+            padding: 5px
+            width: 24px
+  .collection
+    &-description
+      margin-top: 36px
+      &__text
+        letter-spacing: 0.8px
+      &__link
+        display: none
