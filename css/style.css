@@ -698,7 +698,7 @@ template {
 }
 
 .trands-container {
-  width: 1136px;
+  max-width: 1136px;
 }
 
 .trands-menu {
@@ -829,6 +829,13 @@ template {
 }
 
 .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img__link {
   margin-bottom: 30px;
 }
 
@@ -854,6 +861,16 @@ template {
     max-width: 90%;
     margin-right: auto;
     margin-left: auto;
+  }
+  .trands-menu {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .trands-cards {
+    grid: repeat(4, -webkit-max-content)/repeat(2, -webkit-max-content);
+    grid: repeat(4, max-content)/repeat(2, max-content);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -958,6 +975,9 @@ template {
   .hero-description__advantage-item {
     margin-right: 25px;
   }
+  .collection {
+    margin-bottom: 78px;
+  }
   .collection-container {
     width: 667px;
   }
@@ -971,6 +991,40 @@ template {
   }
   .collection-description__link {
     margin-top: 25px;
+  }
+  .trands-menu {
+    margin-bottom: 37px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trands-menu__tabs {
+    padding-left: 0;
+    margin-top: 29px;
+  }
+  .trands-menu__tabs-item {
+    margin-left: 0;
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+  .trands-menu__title {
+    font-family: HKGrotesk-Bold;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  .trands-cards {
+    grid-gap: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .trands-cards__item {
+    width: 280px;
   }
 }
 
@@ -1013,6 +1067,9 @@ template {
     font-size: 16px;
     line-height: 28px;
   }
+  .trands-cards__item {
+    width: 215px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1036,6 +1093,53 @@ template {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .trands-cards {
+    gap: 30px 20px;
+  }
+  .trands-cards__item {
+    width: auto;
+  }
+  .trands-link {
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 29px;
+  }
+  .trands-menu__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  .image-wrapper {
+    width: 140px;
+    height: 170px;
+  }
+  .description-wrapper__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  .description-wrapper__price {
+    display: block;
+  }
+  .price {
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .cart {
+    width: 14px;
+  }
+  .card-img__link {
+    width: 25px;
+    margin-bottom: 17px;
   }
 }
 
@@ -1092,6 +1196,9 @@ template {
     padding: 5px;
     width: 24px;
   }
+  .collection {
+    margin-bottom: 90px;
+  }
   .collection-description {
     margin-top: 36px;
   }
@@ -1100,6 +1207,29 @@ template {
   }
   .collection-description__link {
     display: none;
+  }
+  .trands-cards {
+    gap: 22px 10px;
+    margin-left: 0;
+  }
+  .trands-menu {
+    margin-bottom: 18px;
+  }
+  .trands-menu__tabs {
+    margin-top: 25px;
+  }
+  .trands-menu__tabs-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .description-wrapper {
+    padding: 0;
+  }
+  .description-wrapper__title {
+    margin-top: 13px;
+    margin-bottom: 4px;
   }
 }
 /*# sourceMappingURL=style.css.map */
