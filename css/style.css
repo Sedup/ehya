@@ -745,6 +745,10 @@ template {
   cursor: pointer;
 }
 
+.trands-menu__tabs-item-active {
+  font-weight: bold;
+}
+
 .trands-cards {
   margin-left: 5px;
   display: -ms-grid;
@@ -763,6 +767,12 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.trands-cards__item-link {
+  -webkit-box-ordinal-group: 21;
+      -ms-flex-order: 20;
+          order: 20;
 }
 
 .trands-link {
