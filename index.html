@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehya</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -218,7 +219,7 @@
         <div class="trands-cards__item trands-cards__item-link">
           <div class="image-wrapper">
             <a href="#" class="trands-link">
-              <img src="img/icons/plus.svg" alt="Minimalist Style" class="card-img__link">
+              <img src="img/icons/plus.svg" alt="Minimalist Style" class="card-img_link">
               Смотреть<br> больше коллекций
             </a>
           </div>
@@ -236,8 +237,61 @@
   </section>
   <!-- /.trends -->
 
+  <section class="reviews">
+    <div class="reviews-container">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="reviews-slide">
+              <div class="reviews-slide__image-wrapper">
+                <img src="img/icons/quote-icon.svg" alt="Кавычки" class="reviews-slide__image">
+              </div>
+              <p class="reviews-slide__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и
+                новаторские. Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно
+                неподвластны времени, а качество ткани просто превосходно.
+                Я с нетерпением жду новых коллекций от сезона к сезону</p>
+              <h2 class="reviews-slide__title">Алисия Пума - клиент Fashun</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slide">
+              <div class="reviews-slide__image-wrapper">
+                <img src="img/icons/quote-icon.svg" alt="Кавычки" class="reviews-slide__image">
+              </div>
+              <p class="reviews-slide__text">Я покупала несколько раз из коллекций, и что мне нравится, это то, что они
+                действительно неподвластны времени, а качество ткани просто превосходно. Мне очень нравятся дизайн и
+                стили, которые создает Ehya. Они такие разные и новаторские.
+                Я с нетерпением жду новых коллекций от сезона к сезону</p>
+              <h2 class="reviews-slide__title">Пума Алисия - клиент Fashun</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews-slide">
+              <div class="reviews-slide__image-wrapper">
+                <img src="img/icons/quote-icon.svg" alt="Кавычки" class="reviews-slide__image">
+              </div>
+              <p class="reviews-slide__text">Я с нетерпением жду новых коллекций от сезона к сезону. Мне очень нравятся
+                дизайн и стили, которые создает Ehya. Они такие разные и
+                новаторские. Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно
+                неподвластны времени, а качество ткани просто превосходно.</p>
+              <h2 class="reviews-slide__title">Fashun Пума - клиент Алисия</h2>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
 
 
+    </div>
+  </section>
+  <!-- /.reviews -->
+
+
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
