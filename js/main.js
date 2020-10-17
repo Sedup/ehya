@@ -37,7 +37,7 @@ $(document).ready(function () {
 
   //Slider
 
-  var mySwiper = new Swiper('.swiper-container', {
+  var reviewsSwiper = new Swiper('.reviews__slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -51,6 +51,22 @@ $(document).ready(function () {
     autoplay: {
       delay: 5000,
     },
-  })
+  });
+
+  var storiesSwiper = new Swiper('.stories__slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    navigation: {
+      nextEl: '.slider-navigation__button-next',
+      prevEl: '.slider-navigation__button-prev',
+    },
+  });
+
 
 });

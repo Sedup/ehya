@@ -1,0 +1,93 @@
+.stories
+  &-container
+    display: flex
+    flex-direction: row
+    max-width: 1150px
+    margin: 0 auto
+    padding-top: 113px
+    border-top: 1px solid #E5EAF4
+  &-description
+    max-width: 380px
+    margin-right: 101px
+    &__label
+      padding: 6px 16px
+      margin-bottom: 34px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      text-transform: uppercase
+      color: #36B37E
+      background: rgba(54, 179, 126, 0.1)
+      border-radius: 2000px
+    &__title
+      margin-top: 34px
+      margin-bottom: 25px
+      font-family: HKGrotesk-Bold
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: #183B56
+    &__text
+      margin-bottom: 50px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: #5A7184
+      letter-spacing: 0.7px
+  &-slider
+    display: flex
+    justify-content: space-between
+    &__item
+      position: relative
+      max-width: 318px
+      margin-left: 12px
+      margin-right: 7px
+      &-image
+        width: 100%
+        overflow: hidden
+        object-fit: cover
+        // border-radius: 8px
+      &-description
+        position: absolute
+        right: -10px
+        top: 300px
+        max-width: 312px
+        background-color: #fff
+        padding: 0 33px 54px 20px
+      &-text
+        font-family: HKGrotesk-Regular
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        letter-spacing: 0.2px
+        color: #183B56
+      &-link
+        text-decoration: none
+        cursor: pointer
+        color: $primary
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+  &__slider
+    width: 670px
+    height: 475px
+.slider
+  &-navigation
+    &__button
+      width: 56px
+      height: 56px
+      border: none
+      background: none
+      background-repeat: no-repeat
+      &-next
+        background-image: url(../img/icons/next-button-active.svg)
+      &-prev
+        background-image: url(../img/icons/prev-button.svg)
+        margin-right: 15px
