@@ -22,6 +22,14 @@
     &-cards
       grid: repeat(4, max-content)/repeat(2, max-content)
       justify-content: space-around
+  .stories
+    &-container
+      flex-direction: column
+      align-items: center
+    &-description
+      text-align: center
+      margin-right: 0
+      margin-bottom: 36px
 @media (max-width: 1100px)
   .hero
     &-background
@@ -148,6 +156,29 @@
   .swiper
     &-container
       max-width: 80%
+  .reviews
+    &-container
+      margin-bottom: 66px
+    &-slide
+      &__title
+        margin-bottom: 47px
+  .stories
+    &-container
+      padding-top: 84px
+      max-width: 728px
+    &-description
+      max-width: 530px
+      &__title
+        letter-spacing: 0
+        margin-bottom: 13px
+      &__text
+        margin-top: 0
+        margin-bottom: 36px
+    &__slider
+      max-width: 90%
+    &-slider
+      &__item
+        margin-left: 0
 @media (max-width: 700px)
   .collection
     &-container
@@ -182,6 +213,33 @@
     &-cards
       &__item
         width: 215px
+  .stories
+    &-slider
+      flex-direction: column
+      align-items: center
+      &__item
+        margin-bottom: 180px
+        margin-right: 0
+    &__slider
+      height: 1000px
+      &-description
+        margin-left: 10px
+        top: 93%
+@media (max-width: 600px)
+  .stories
+    &-slider
+      &__item
+        &-description
+          &-text
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            letter-spacing: 0.2px
+    &-description
+      &__title
+        font-size: 28px
+        line-height: 36px
+        letter-spacing: 0.2px
 @media (max-width: 570px)
   .hero
     max-width: 100%
@@ -254,6 +312,21 @@
         letter-spacing: 0.2px
       &__image
         width: 70px
+  .stories
+    &-description
+      max-width: 90%
+@media (max-width: 350px)
+  .stories
+    &-slider
+      &__item
+        max-width: 270px
+        &-description
+          right: -55px
+          top: 260px
+        &-text
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.2px
 @media (max-width: 320px)
   .navbar
     padding-left: 24px
@@ -340,3 +413,26 @@
     &-pagination
       &-bullet
         margin: 0 8px
+  .stories
+    &-description
+      margin-bottom: 20px
+      &__title
+        margin-top: 25px
+        margin-bottom: 16px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      &__item
+        margin-bottom: 152px
+        &-description
+          right: -48px
+          top: 256px
+  .slider
+    &-navigation
+      &__button
+        width: 48px
+        &-prev
+          background-image: url(../img/icons/prev-button-small.svg)
+        &-next
+          background-image: url(../img/icons/next-button-active-small.svg)
