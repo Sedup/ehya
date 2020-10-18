@@ -69,5 +69,18 @@ $(document).ready(function () {
     },
   });
 
+  // Валидация формы
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        newEmail: {
+          required: "Пожалуйста введите e-mail",
+          email: "Некорректный e-mail",
+        },
+      },
+    });
+  });
 
 });

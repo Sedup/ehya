@@ -42,6 +42,15 @@ img {
   background-color: inherit;
 }
 
+label.invalid {
+  color: #EC1F46;
+  left: 5px;
+  bottom: 0;
+  font-size: 14px;
+  padding-left: 3px;
+  position: absolute;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1130,6 +1139,60 @@ template {
   color: #FFFFFF;
   background-color: #183B56;
   border-radius: 4px;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 128px;
+}
+
+.footer__block {
+  margin-right: 30px;
+}
+
+.footer-title {
+  margin: 0;
+  margin-bottom: 31px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-list__item {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand {
+  max-width: 262px;
+}
+
+.brand__logo {
+  margin: 0;
+}
+
+.brand_text {
+  margin-top: 28px;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 1200px) {
