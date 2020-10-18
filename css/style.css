@@ -1056,6 +1056,7 @@ template {
 .newsletter {
   width: 100%;
   background-color: #1565D8;
+  position: relative;
 }
 
 .newsletter-container {
@@ -1140,6 +1141,15 @@ template {
   color: #FFFFFF;
   background-color: #183B56;
   border-radius: 4px;
+}
+
+.bg-left {
+  position: absolute;
+}
+
+.bg-right {
+  position: absolute;
+  right: 0;
 }
 
 .footer-container {
@@ -1385,6 +1395,13 @@ template {
   }
   .newsletter-form__input {
     width: 447px;
+  }
+  .bg-left {
+    left: -165px;
+  }
+  .bg-right {
+    bottom: 0;
+    right: -165px;
   }
 }
 
@@ -1727,9 +1744,19 @@ template {
     right: 0;
     padding: 11px 79px;
   }
+  .newsletter .bg-left {
+    left: -270px;
+  }
+  .bg-right {
+    bottom: 0;
+    right: -270px;
+  }
 }
 
 @media (max-width: 400px) {
+  .bg-left {
+    left: -100px;
+  }
   .footer-container {
     padding-top: 48px;
     max-width: 79%;
