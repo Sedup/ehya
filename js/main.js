@@ -56,15 +56,16 @@ $(document).ready(function () {
   var storiesSwiper = new Swiper('.stories__slider', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
     autoplay: {
-      delay: 5000,
+      delay: 7000,
     },
 
     navigation: {
       nextEl: '.slider-navigation__button-next',
       prevEl: '.slider-navigation__button-prev',
+      disabledClass: 'slider-navigation__button-unactive'
     },
   });
 

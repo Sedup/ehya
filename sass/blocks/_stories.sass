@@ -6,6 +6,7 @@
     margin: 0 auto
     padding-top: 113px
     border-top: 1px solid #E5EAF4
+    margin-bottom: 145px
   &-description
     max-width: 380px
     margin-right: 101px
@@ -82,12 +83,14 @@
   &-navigation
     &__button
       width: 56px
-      height: 56px
+      height: 57px
       border: none
       background: none
       background-repeat: no-repeat
+      background-image: url(../img/icons/next-button-active.svg)
       &-next
-        background-image: url(../img/icons/next-button-active.svg)
       &-prev
-        background-image: url(../img/icons/prev-button.svg)
+        transform: rotate(180deg)
         margin-right: 15px
+      &-unactive
+        background-image: url(../img/icons/next-button.svg)
