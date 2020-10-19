@@ -94,4 +94,33 @@ $(document).ready(function () {
       },
     });
   });
+
+  //Modal
+
+  var heroButton = $('.hero-description__button');
+  var closeModalButton = $(".modal__close");
+  var modalOverlay = $(".modal__overlay")
+  var modalDialog = $(".modal__dialog")
+
+  const openModal = () => {
+    modalOverlay.addClass('modal__overlay_visible');
+    modalDialog.addClass('modal__dialog_visible');
+  };
+
+  const closeModal = () => {
+    event.preventDefault();
+    modalOverlay.removeClass('modal__overlay_visible');
+    modalDialog.removeClass('modal__dialog_visible');
+  };
+
+  heroButton.on('click', openModal);
+
+  closeModalButton.on('click', closeModal);
+  modalOverlay.on('click', closeModal);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
+      closeModal();
+    };
+  });
 });

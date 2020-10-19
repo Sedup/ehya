@@ -8,12 +8,30 @@ require 'phpmailer/Exception.php';
 
 $newEmail = $_POST['newEmail'];
 
+$messageSize = count($_POST);
+
+if ($messageSize == 4) {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $title = "Новое обращение на подбор одежды на Ehya";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>E-mail:</b> $email<br>
+    <b>Сообщение:</b><br>$message
+    ";
+} else if ($messageSize == 1) {
+
 $title = "Запрос на рассылку новостей";
 $body = "
 <h2>Новый запрос на рассылку новостей</h2>
 <b>Пользователь с адресом - </b> $newEmail подписался на рассылку новостей!<br> 
 ";
-
+}
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -51,7 +69,11 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-header('Location: thankyou.html');
+if ($messageSize == 4) {
+    header('Location: thankyou-dress.html');
+} else if ($messageSize == 1) {
+    header('Location: thankyou.html');;
+};
 
 
 // Отображение результата
