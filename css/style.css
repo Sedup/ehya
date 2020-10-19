@@ -693,6 +693,7 @@ template {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 .collection-description__text {
@@ -751,6 +752,7 @@ template {
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.2px;
+  color: #183B56;
 }
 
 .trands-menu__tabs {
@@ -776,6 +778,7 @@ template {
 
 .trands-menu__tabs-item-active {
   font-weight: bold;
+  color: #183B56;
 }
 
 .trands-cards {
@@ -847,6 +850,7 @@ template {
   margin: 0;
   margin-bottom: 7px;
   letter-spacing: -1px;
+  color: #183B56;
 }
 
 .description-wrapper__price {

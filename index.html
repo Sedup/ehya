@@ -471,6 +471,34 @@
     <!-- /.modal__dialog -->
   </div>
 
+  <div class="modal-in">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <a href="#" class="modal__close">
+          <img src="img/close-modal.svg" alt="Icon: close">
+        </a>
+        <div class="modal__contact-form">
+          <h3 class="modal__title modal__title_form">Вход</h3>
+          <form action="send.php" method="POST" class="modal__form form">
+            <div class="modal__input_group">
+              <input type="text" class="input modal__input" placeholder="Логин*" name="name" required>
+            </div>
+            <div class="modal__input_group">
+              <input type="text" class="input modal__input tel" placeholder="Пароль*" name="phone" required>
+            </div>
+            <div class="modal__button-wrapper">
+              <button class="button modal__button" type="submit">Войти</button>
+              <span class="modal__info">* обязательные поля</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+
   <a href="#" class="to-top">
     <img src="img/return.png" alt="Наверх">
   </a>
