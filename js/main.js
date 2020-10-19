@@ -17,35 +17,35 @@ $(document).ready(function () {
     tabsItem.removeClass("trands-menu__tabs-item-active");
     $(this).addClass("trands-menu__tabs-item-active");
 
-
     if (activeContent == "best") {
-      $(cardsItem).css('order', '');
+      $(cardsItem).css("order", "");
       for (i = 6, j = 1; i >= 0; i--) {
-        $(cardsItem[i]).css('order', j);
+        $(cardsItem[i]).css("order", j);
         j++;
-      };
-    }
-    else if (activeContent == "soon") {
-      $(cardsItem).css('order', '');
+      }
+    } else if (activeContent == "soon") {
+      $(cardsItem).css("order", "");
       for (i = 0; i < 7; i++) {
         let j = Math.floor(Math.random() * (20 - 1)) + 1;
-        $(cardsItem[i]).css('order', j);
-      };
-    }
-    else $(cardsItem).css('order', '');
+        $(cardsItem[i]).css("order", j);
+      }
+    } else $(cardsItem).css("order", "");
   });
 
   //Slider
 
-  var reviewsSwiper = new Swiper('.reviews__slider', {
+  var reviewsSwiper = new Swiper(".reviews__slider", {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
+      type: 'bullets',
       clickable: true,
+      bulletClass: "swiper-pagination-bull",
+      bulletActiveClass: "swiper-pagination-bull-active"
     },
 
     autoplay: {
@@ -54,20 +54,20 @@ $(document).ready(function () {
 
     on: {
       init() {
-        this.el.addEventListener('mouseenter', () => {
+        this.el.addEventListener("mouseenter", () => {
           this.autoplay.stop();
         });
 
-        this.el.addEventListener('mouseleave', () => {
+        this.el.addEventListener("mouseleave", () => {
           this.autoplay.start();
         });
-      }
+      },
     },
   });
 
-  var storiesSwiper = new Swiper('.stories__slider', {
+  var storiesSwiper = new Swiper(".stories__slider", {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: false,
 
     autoplay: {
@@ -75,9 +75,9 @@ $(document).ready(function () {
     },
 
     navigation: {
-      nextEl: '.slider-navigation__button-next',
-      prevEl: '.slider-navigation__button-prev',
-      disabledClass: 'slider-navigation__button-unactive'
+      nextEl: ".slider-navigation__button-next",
+      prevEl: ".slider-navigation__button-prev",
+      disabledClass: "slider-navigation__button-unactive",
     },
   });
 
@@ -94,5 +94,4 @@ $(document).ready(function () {
       },
     });
   });
-
 });
