@@ -21,6 +21,7 @@ body
   margin: auto
 a, button
   outline: none
+  border: none
 img
   max-width: 100%
 .button
@@ -33,3 +34,16 @@ label.invalid
   font-size: 14px
   padding-left: 3px
   position: absolute
+@media (min-width: 992px)
+  a.navbar
+    &-top
+      &__menu
+        &-link
+          transition: 0.5s linear
+          &:hover
+            color: $primary
+  a.footer
+    &-link
+      transition: 0.5s linear
+      &:hover
+        color: $primary
