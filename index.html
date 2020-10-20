@@ -21,11 +21,11 @@
         </div>
         <div class="navbar-top__menu-right">
           <ul class="navbar-top__menu">
-            <li><a href="#" class="navbar-top__menu-link">Главная</a></li>
-            <li><a href="#" class="navbar-top__menu-link">Новинки</a></li>
-            <li><a href="#" class="navbar-top__menu-link">Тренды</a></li>
-            <li><a href="#" class="navbar-top__menu-link">Отзывы</a></li>
-            <li><a href="#" class="navbar-top__menu-link">Контакты</a></li>
+            <li><a href="#main" class="navbar-top__menu-link">Главная</a></li>
+            <li><a href="#collection" class="navbar-top__menu-link">Новинки</a></li>
+            <li><a href="#trands" class="navbar-top__menu-link">Тренды</a></li>
+            <li><a href="#reviews" class="navbar-top__menu-link">Отзывы</a></li>
+            <li><a href="#contacts" class="navbar-top__menu-link">Контакты</a></li>
           </ul>
           <button class="button navbar-top__button in-button">Войти</button>
         </div>
@@ -41,11 +41,11 @@
       <div class="navbar-bottom__menu-right">
         <a href="" class="navbar-bottom__menu-close"><img src="img/icons/close-icon.svg" alt="Icon: close"></a>
         <ul class="navbar-bottom__menu">
-          <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Главная</a></li>
-          <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Новинки</a></li>
-          <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Тренды</a></li>
-          <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Отзывы</a></li>
-          <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Контакты</a></li>
+          <li class="navbar-bottom__menu-item"><a href="#main" class="navbar-bottom__menu-link">Главная</a></li>
+          <li class="navbar-bottom__menu-item"><a href="#collection" class="navbar-bottom__menu-link">Новинки</a></li>
+          <li class="navbar-bottom__menu-item"><a href="#trands" class="navbar-bottom__menu-link">Тренды</a></li>
+          <li class="navbar-bottom__menu-item"><a href="#reviews" class="navbar-bottom__menu-link">Отзывы</a></li>
+          <li class="navbar-bottom__menu-item"><a href="#contacts" class="navbar-bottom__menu-link">Контакты</a></li>
         </ul>
         <button class="button navbar-bottom__button in-button">Войти</button>
       </div>
@@ -54,6 +54,7 @@
   <!-- ./navbar -->
 
   <section class="hero">
+    <a name="main"></a>
     <div class="hero-background">
       <img src="img/girl.png" alt="" class="hero-background__image">
       <div class="hero-background__color"></div>
@@ -89,6 +90,7 @@
   <!-- ./hero -->
 
   <section class="collection">
+    <a name="collection"></a>
     <div class="container collection-container">
       <div class="collection-images">
         <div class="collection-images__item collection-images__item-big">
@@ -114,6 +116,7 @@
   <!-- /.collection -->
 
   <section class="trands">
+    <a name="trands"></a>
     <div class="container trands-container">
       <div class="trands-menu">
         <h2 class="trands-menu__title">Тренды</h2>
@@ -238,6 +241,7 @@
   <!-- /.trends -->
 
   <section class="reviews">
+    <a name="reviews"></a>
     <div class="reviews-container">
       <!-- Slider main container -->
       <div class="swiper-container reviews__slider">
@@ -378,6 +382,7 @@
   <!-- ./newsletter -->
 
   <footer class="footer">
+    <a name="contacts"></a>
     <div class="footer-container">
       <div class="brand footer__block">
         <a href="https://sedup.name/ehya/" class="brand__logo"><img src="img/logo.svg" alt="ehya"></a>
@@ -471,33 +476,33 @@
     <!-- /.modal__dialog -->
   </div>
 
-    <div class="modal-in">
-      <div class="modal-in_overlay"></div>
-      <!-- /.modal__overlay -->
-      <div class="modal-in_dialog">
-        <div class="modal-in_content">
-          <a href="#" class="modal-in_close">
-            <img src="img/close-modal.svg" alt="Icon: close">
-          </a>
-          <div class="modal-in_contact-form">
-            <h3 class="modal-in_title modal-in_title_form">Вход</h3>
-            <form action="send.php" method="POST" class="modal-in_form form">
-              <div class="modal-in_input_group">
-                <input type="text" class="input modal-in_input" placeholder="Логин*" name="name" required>
-              </div>
-              <div class="modal-in_input_group">
-                <input type="password" class="input modal-in_input" placeholder="Пароль*" name="pass" required>
-              </div>
-              <div class="modal-in_button-wrapper">
-                <button class="button modal-in_button" type="submit">Войти</button>
-                <span class="modal-in_info">* обязательные поля</span>
-              </div>
-            </form>
-          </div>
+  <div class="modal-in">
+    <div class="modal-in_overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal-in_dialog">
+      <div class="modal-in_content">
+        <a href="#" class="modal-in_close">
+          <img src="img/close-modal.svg" alt="Icon: close">
+        </a>
+        <div class="modal-in_contact-form">
+          <h3 class="modal-in_title modal-in_title_form">Вход</h3>
+          <form action="send.php" method="POST" class="modal-in_form form">
+            <div class="modal-in_input_group">
+              <input type="text" class="input modal-in_input" placeholder="Логин*" name="name" required>
+            </div>
+            <div class="modal-in_input_group">
+              <input type="password" class="input modal-in_input" placeholder="Пароль*" name="pass" required>
+            </div>
+            <div class="modal-in_button-wrapper">
+              <button class="button modal-in_button" type="submit">Войти</button>
+              <span class="modal-in_info">* обязательные поля</span>
+            </div>
+          </form>
         </div>
       </div>
-      <!-- /.modal__dialog -->
     </div>
+    <!-- /.modal__dialog -->
+  </div>
 
 
 
