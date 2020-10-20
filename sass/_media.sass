@@ -21,7 +21,7 @@
       justify-content: space-around
     &-cards
       grid: repeat(4, max-content)/repeat(2, max-content)
-      justify-content: space-around
+      justify-content: space-evenly
   .stories
     &-container
       flex-direction: column
@@ -437,6 +437,22 @@
   .bg-right
     bottom: 0
     right: -270px
+@media (max-height: 600px)
+  .modal
+    &_dialog
+      top: 50%
+@media (max-height: 470px)
+  .modal
+    &_message
+      min-height: 50px
+    &_dialog
+      padding: 12px 25px
+    &_input
+      padding-top: 1px
+    &_button
+      min-width: 110px
+      min-height: 30px
+      padding: 8px
 @media (max-width: 400px)
   .bg-left
     left: -100px
