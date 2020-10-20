@@ -15,7 +15,7 @@
     <div class="container">
       <div class="navbar-top">
         <div class="navbar-top__logo">
-          <a href="#">
+          <a href="https://sedup.name/ehya/">
             <img src="img/logo.svg" alt="Logo: ehya">
           </a>
         </div>
@@ -27,7 +27,7 @@
             <li><a href="#" class="navbar-top__menu-link">Отзывы</a></li>
             <li><a href="#" class="navbar-top__menu-link">Контакты</a></li>
           </ul>
-          <button class="button navbar-top__button">Войти</button>
+          <button class="button navbar-top__button in-button">Войти</button>
         </div>
         <button class="navbar-top__menu-button">
           <img src="img/icons/menu-icon.svg" alt="Icon: menu">
@@ -47,7 +47,7 @@
           <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Отзывы</a></li>
           <li class="navbar-bottom__menu-item"><a href="#" class="navbar-bottom__menu-link">Контакты</a></li>
         </ul>
-        <button class="button navbar-bottom__button">Войти</button>
+        <button class="button navbar-bottom__button in-button">Войти</button>
       </div>
     </div>
   </header>
@@ -380,7 +380,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="brand footer__block">
-        <a href="#" class="brand__logo"><img src="img/logo.svg" alt="ehya"></a>
+        <a href="https://sedup.name/ehya/" class="brand__logo"><img src="img/logo.svg" alt="ehya"></a>
         <p class="brand_text">
           Интернет-магазин брендовой одежды с оплатой онлайн
         </p>
@@ -440,29 +440,29 @@
   </footer>
 
   <div class="modal">
-    <div class="modal__overlay"></div>
+    <div class="modal_overlay"></div>
     <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <a href="#" class="modal__close">
+    <div class="modal_dialog">
+      <div class="modal_content">
+        <a href="#" class="modal_close">
           <img src="img/close-modal.svg" alt="Icon: close">
         </a>
-        <div class="modal__contact-form">
-          <h3 class="modal__title modal__title_form">Подобрать одежду</h3>
-          <form action="send.php" method="POST" class="modal__form form">
-            <div class="modal__input_group">
-              <input type="text" class="input modal__input" placeholder="Имя*" name="name" required>
+        <div class="modal_contact-form">
+          <h3 class="modal_title modal__title_form">Подобрать одежду</h3>
+          <form action="send.php" method="POST" class="modal_form form">
+            <div class="modal_input_group">
+              <input type="text" class="input modal_input" placeholder="Имя*" name="name" required>
             </div>
-            <div class="modal__input_group">
-              <input type="tel" class="input modal__input tel" placeholder="Номер телефона*" name="phone" required>
+            <div class="modal_input_group">
+              <input type="tel" class="input modal_input tel" placeholder="Номер телефона*" name="phone" required>
             </div>
-            <div class="modal__input_group">
-              <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            <div class="modal_input_group">
+              <input type="email" class="input modal_input" placeholder="Email*" name="email" required>
             </div>
-            <textarea placeholder="Сообщение" class="message modal__message" name="message"></textarea>
-            <div class="modal__button-wrapper">
-              <button class="button modal__button" type="submit">Отправить</button>
-              <span class="modal__info">* обязательные поля</span>
+            <textarea placeholder="Сообщение" class="message modal_message" name="message"></textarea>
+            <div class="modal_button-wrapper">
+              <button class="button modal_button" type="submit">Отправить</button>
+              <span class="modal_info">* обязательные поля</span>
             </div>
           </form>
         </div>
@@ -471,33 +471,35 @@
     <!-- /.modal__dialog -->
   </div>
 
-  <div class="modal-in">
-    <div class="modal__overlay"></div>
-    <!-- /.modal__overlay -->
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <a href="#" class="modal__close">
-          <img src="img/close-modal.svg" alt="Icon: close">
-        </a>
-        <div class="modal__contact-form">
-          <h3 class="modal__title modal__title_form">Вход</h3>
-          <form action="send.php" method="POST" class="modal__form form">
-            <div class="modal__input_group">
-              <input type="text" class="input modal__input" placeholder="Логин*" name="name" required>
-            </div>
-            <div class="modal__input_group">
-              <input type="text" class="input modal__input tel" placeholder="Пароль*" name="phone" required>
-            </div>
-            <div class="modal__button-wrapper">
-              <button class="button modal__button" type="submit">Войти</button>
-              <span class="modal__info">* обязательные поля</span>
-            </div>
-          </form>
+    <div class="modal-in">
+      <div class="modal-in_overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal-in_dialog">
+        <div class="modal-in_content">
+          <a href="#" class="modal-in_close">
+            <img src="img/close-modal.svg" alt="Icon: close">
+          </a>
+          <div class="modal-in_contact-form">
+            <h3 class="modal-in_title modal-in_title_form">Вход</h3>
+            <form action="send.php" method="POST" class="modal-in_form form">
+              <div class="modal-in_input_group">
+                <input type="text" class="input modal-in_input" placeholder="Логин*" name="name" required>
+              </div>
+              <div class="modal-in_input_group">
+                <input type="text" class="input modal-in_input" placeholder="Пароль*" name="phone" required>
+              </div>
+              <div class="modal-in_button-wrapper">
+                <button class="button modal-in_button" type="submit">Войти</button>
+                <span class="modal-in_info">* обязательные поля</span>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+      <!-- /.modal__dialog -->
     </div>
-    <!-- /.modal__dialog -->
-  </div>
+
+
 
   <a href="#" class="to-top">
     <img src="img/return.png" alt="Наверх">

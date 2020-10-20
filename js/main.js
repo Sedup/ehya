@@ -98,19 +98,19 @@ $(document).ready(function () {
   //Modal
 
   var heroButton = $('.hero-description__button');
-  var closeModalButton = $(".modal__close");
-  var modalOverlay = $(".modal__overlay")
-  var modalDialog = $(".modal__dialog")
+  var closeModalButton = $(".modal_close");
+  var modalOverlay = $(".modal_overlay")
+  var modalDialog = $(".modal_dialog")
 
   const openModal = () => {
-    modalOverlay.addClass('modal__overlay_visible');
-    modalDialog.addClass('modal__dialog_visible');
+    modalOverlay.addClass('modal_overlay_visible');
+    modalDialog.addClass('modal_dialog_visible');
   };
 
   const closeModal = () => {
     event.preventDefault();
-    modalOverlay.removeClass('modal__overlay_visible');
-    modalDialog.removeClass('modal__dialog_visible');
+    modalOverlay.removeClass('modal_overlay_visible');
+    modalDialog.removeClass('modal_dialog_visible');
   };
 
   heroButton.on('click', openModal);
@@ -121,6 +121,35 @@ $(document).ready(function () {
   document.addEventListener('keydown', (event) => {
     if (event.code === 'Escape') {
       closeModal();
+    };
+  });
+
+    //Modal-in
+
+  var inButton = $('.in-button');
+  var closeInModalButton = $(".modal-in_close");
+  var modalInOverlay = $(".modal-in_overlay")
+  var modalInDialog = $(".modal-in_dialog")
+
+  const openInModal = () => {
+    modalInOverlay.addClass('modal-in_overlay_visible');
+    modalInDialog.addClass('modal-in_dialog_visible');
+  };
+
+  const closeInModal = () => {
+    event.preventDefault();
+    modalInOverlay.removeClass('modal-in_overlay_visible');
+    modalInDialog.removeClass('modal-in_dialog_visible');
+  };
+
+  inButton.on('click', openInModal);
+
+  closeInModalButton.on('click', closeInModal);
+  modalInOverlay.on('click', closeInModal);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
+      closeInModal();
     };
   });
 });
