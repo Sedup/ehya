@@ -31,6 +31,8 @@ $body = "
 <h2>Новый запрос на рассылку новостей</h2>
 <b>Пользователь с адресом - </b> $newEmail подписался на рассылку новостей!<br> 
 ";
+} else if ($messageSize == 2) {
+    header('Location: page-in.html');
 }
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -72,7 +74,7 @@ else {$result = "error";}
 if ($messageSize == 4) {
     header('Location: thankyou-dress.html');
 } else if ($messageSize == 1) {
-    header('Location: thankyou.html');;
+    header('Location: thankyou.html');
 };
 
 
